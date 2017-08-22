@@ -207,7 +207,7 @@ class Header extends React.Component{
     //Render is a function, if and else works like in regular JavaScript
     //if the prop is true, return element, if not, return null, nothing.
     render(){
-        if(isVisible){
+        if(this.props.isVisible){
             return(
                 <h1>
                 {this.props.values.greeting} {this.props.values.name}
