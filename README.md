@@ -35,7 +35,7 @@ Läggs upp inom kort.
 
 ## Schema
 
-#### Pass 1
+#### Pass 1 - 21/8
 
 * `class`
 * npm
@@ -43,13 +43,20 @@ Läggs upp inom kort.
 * moduler
 * `webpack`
 
+
+###### Lektionsmaterial
+
+* [`webpack` - __övning__](exercises/webpack.md)
+
 ###### Länkar
 
 * [npmjs.com](https://www.npmjs.com/)
 * [Webpack 3](https://webpack.js.org/)
 * [Intro To Webpack @ _CSS-Tricks_](https://css-tricks.com/introduction-webpack-entry-output-loaders-plugins/)
 
-#### Pass 2 
+
+
+#### Pass 2 -22/8
 
 * **React intro**
     - `create-react-app`
@@ -58,13 +65,23 @@ Läggs upp inom kort.
     - _JSX_
 * **Props**
 
+
+###### Lektionsmaterial
+
+* [React Komponenter - __övning__](exercises/02_props.md)
+* [React Intro PDF](slides/01_react.pdf)
+* [Props PDF](slides/02_props.pdf)
+* [Fejk-react i Vanilla](https://jsbin.com/lucugupoje/edit?html,js,output)
+* [Dagens kodexempel](code/01_intro.js)
+
 ###### Länkar
 
 * [Component and props @ _React Docs_](https://facebook.github.io/react/docs/components-and-props.html)
 * [JSX @ _React Docs_](https://facebook.github.io/react/docs/introducing-jsx.html)
 * [https://github.com/facebookincubator/create-react-app](https://github.com/facebookincubator/create-react-app)
 
-#### Pass 3
+
+#### Pass 3 - 23/8
 
 * **STATE**
 * _Events_
@@ -76,7 +93,7 @@ Läggs upp inom kort.
 * [State @ _React Docs_](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 * [Handling Events @ _React Docs_](https://facebook.github.io/react/docs/handling-events.html)
 
-#### Pass 4
+#### Pass 4 - 30/8
 
 * _Fil & mappstruktur i React_
 * _Styling i React_
@@ -88,7 +105,7 @@ Läggs upp inom kort.
 * [Functional Components @ _React Docs_](https://facebook.github.io/react/docs/components-and-props.html)
 * [DOM Elements @ _React Docs_](https://facebook.github.io/react/docs/dom-elements.html)
 
-#### Pass 5
+#### Pass 5 - 31/8
 
 * _Component Lifecycle_
 * _Async i React_
@@ -100,7 +117,7 @@ Läggs upp inom kort.
 * [Understanding Component Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/)
 * [React fetch exempel @ _codesandbox.io_](https://codesandbox.io/s/j2P1qGZl4)
 
-#### Pass 6
+#### Pass 6 - 1/9
 
 * _Controlled Inputs_ vs. _Uncontrolled inputs_
 * _Formulär i React_
@@ -113,7 +130,7 @@ Läggs upp inom kort.
 * [Uncontrolled Components @ _React Docs_](https://facebook.github.io/react/docs/uncontrolled-components.html)
 * [Refs @ _React Docs_](https://facebook.github.io/react/docs/refs-and-the-dom.html)
 
-#### Pass 7
+#### Pass 7 - 6/9
 
 * _Component Composition_
 * _Higher Order Components_
@@ -124,7 +141,7 @@ Läggs upp inom kort.
 * [React composition cheat sheet](https://github.com/xat/react-component-composition-cheatsheet)
 
 
-#### Pass 8
+#### Pass 8 - 7/9
 
 * _PropTypes_
 * _Context_
@@ -135,7 +152,7 @@ Läggs upp inom kort.
 * [PropTypes @ _React Docs_](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 * [Context @ _React Docs_](https://facebook.github.io/react/docs/context.html)
 
-#### Pass 9
+#### Pass 9 - 8/9
 
 * Firebase
     *  Intro   
@@ -148,7 +165,7 @@ Läggs upp inom kort.
 * [Data structure @ _Firebase_](https://firebase.google.com/docs/database/web/structure-data)
 * [Read and Write Data @ _Firebase_](https://firebase.google.com/docs/database/web/read-and-write)
 
-#### Pass 10
+#### Pass 10 - 13/9
 
 * Firebase
     * Event listeners
@@ -158,13 +175,13 @@ Läggs upp inom kort.
 
 * [Read & Write @ _Firebase_](https://firebase.google.com/docs/database/web/read-and-write)
 
-#### Pass 11
+#### Pass 11 - 14/9
 
 * Firebase
     * Firebase i kombination med react
     * Hantera dynamisk uppdatering i realtid
 
-#### Pass 12
+#### Pass 12 - 15/9
 
 * Firebase Autentisering
     * Autentisering med email/password
@@ -175,7 +192,7 @@ Läggs upp inom kort.
 
 * [Auth @ _Firebase_](https://firebase.google.com/docs/auth/)
 
-#### Pass 13
+#### Pass 13 - 18/9
 
 * Firebase Autentisering forts.
     * Sociala konton, github etc.
@@ -186,7 +203,7 @@ Läggs upp inom kort.
 * [Auth @ _Firebase_](https://firebase.google.com/docs/auth/)
 * [Security Rules @ _Firebase_](https://firebase.google.com/docs/database/security/)
 
-#### Pass 14
+#### Pass 14 - 19/9
 
 * `webpack` the return 
     * Production vs development 
@@ -198,20 +215,20 @@ Läggs upp inom kort.
 * [Webpack v3](https://webpack.js.org/)
 * [Deployment @ _create-react-app_](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment)
 
-#### Pass 15
+#### Pass 15 -  21/9
 
 * En titt på `redux` för de intresserade
 * Eget arbete med slutuppgiften
 
-#### Pass 16
+#### Pass 16 - 22/9
 
 * Eget arbete med slutuppgiften
 
-#### Pass 17
+#### Pass 17 - 27/9
 
 * Eget arbete med slutuppgiften
 
-#### Pass 18
+#### Pass 18 - 28/9
 
 * Eget arbete med slutuppgiften
 
