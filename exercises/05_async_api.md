@@ -33,15 +33,15 @@ Problemet med att kalla på API:er är att vi aldrig vet hur lång tid det tar a
 ```js
 //skinny version
 fetch("https://api.me/get")
-    .then(data => res.json())           //Get JSON, implicit return
+    .then(response => response.json())           //Get JSON, implicit return
     .then(json => console.log(json))    //Log the JSON
 ```
 
 ```js
 //fat version
 fetch("https://api.me/get")
-    .then(function(data){
-        return res.json()
+    .then(function(response){
+        return response.json()
     })
     .then(function(json){ 
         console.log(json)
