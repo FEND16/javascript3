@@ -21,6 +21,7 @@
 * [Gist: Patterns in React @ _jesperorb_](https://gist.github.com/jesperorb/33a84ea07295cb5a3bb30b180aa025d1)
 * [Handle CORS Client-side](https://gist.github.com/jesperorb/6ca596217c8dfba237744966c2b5ab1e)
 * [CSS-Tricks - Firebase + React](https://css-tricks.com/intro-firebase-react/)
+* [Common Errors in React](https://gist.github.com/jesperorb/a81fda804d89b15606b267a22aa946c8)
 
 ## Dokumentation
 
@@ -29,9 +30,9 @@
 
 ## Examination
 
-Examineras med ett enskilt projekt där du ska bygga en webbapplikation med React samt firebase som databas. Man ska även kunna logga in och lagra information om användaren i databasen.
+##### Individuell examination: [React + Firebase](examination.md)
 
-Läggs upp inom kort.
+---
 
 ## Schema
 
@@ -55,7 +56,6 @@ Läggs upp inom kort.
 * [Intro To Webpack @ _CSS-Tricks_](https://css-tricks.com/introduction-webpack-entry-output-loaders-plugins/)
 
 
-
 #### Pass 2 -22/8
 
 * **React intro**
@@ -68,9 +68,9 @@ Läggs upp inom kort.
 
 ###### Lektionsmaterial
 
-* [React Komponenter - __övning__](exercises/02_props.md)
-* [React Intro PDF](slides/01_react.pdf)
-* [Props PDF](slides/02_props.pdf)
+* [__Övningar__ - React Komponenter](exercises/02_props.md)
+* [__Genomgång__ - React Intro PDF](slides/01_react.pdf)
+* [__Genomgång__ - Props PDF](slides/02_props.pdf)
 * [Fejk-react i Vanilla](https://jsbin.com/lucugupoje/edit?html,js,output)
 * [Dagens kodexempel](code/01_intro.js)
 
@@ -88,16 +88,30 @@ Läggs upp inom kort.
 * _Event handling_
 * _JavaScript binding_
 
+
+###### Lektionsmaterial
+
+* [__Övningar__ - 03 - State & Props](exercises/03_state_props.md)
+* [__Genomgång__ - 03 - State & Props](slides/03_state_props.pdf)
+* [__Lösningsförlag__ - Let's go to the mall!](https://codesandbox.io/s/nrqyx09p5l)
+* [__Kod__ - State](code/02_state.js)
+
 ###### Länkar
 
 * [State @ _React Docs_](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 * [Handling Events @ _React Docs_](https://facebook.github.io/react/docs/handling-events.html)
+
 
 #### Pass 4 - 30/8
 
 * _Fil & mappstruktur i React_
 * _Styling i React_
 * _Functional components_ vs. _Stateful Components_
+
+###### Lektionsmaterial
+
+* [__Övning__ - Component Structure](exercises/04_structure.md)
+* [__Kod__ - Komponentstruktur @ codesandbox.io](https://codesandbox.io/s/vj7nj6q76y)
 
 ###### Länkar
 
@@ -111,11 +125,18 @@ Läggs upp inom kort.
 * _Async i React_
 * async _setState_
 
+###### Lektionsmaterial
+
+* [__Övningar__ - 05_async_api](exercises/05_async_api.md)
+* [__Genomgång__ - React & Async PDF](slides/04_api_async.pdf)
+* [React fetch exempel 1 @ _codesandbox.io_](https://codesandbox.io/s/2z0y1m8xx0)
+* [React fetch exempel 2 @ _codesandbox.io_](https://codesandbox.io/s/j2P1qGZl4)
+
+
 ###### Länkar
 
 * [Component Lifecycle @ _React Docs_](https://facebook.github.io/react/docs/react-component.html)
 * [Understanding Component Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/)
-* [React fetch exempel @ _codesandbox.io_](https://codesandbox.io/s/j2P1qGZl4)
 
 #### Pass 6 - 1/9
 
