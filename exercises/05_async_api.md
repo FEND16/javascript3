@@ -82,9 +82,13 @@ Fetch hanterar `GET` som default. Om vi vill göra något annat än en `GET` må
 
 ```js
 fetch("https://fend-api.herokuapp.com/notes", {
-    method: 'POST',
-    body: { "text" : "Hello!", completed: false }
-});
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },  
+      body: JSON.stringify({ text : "Hello!", completed: false })
+  });
 ```
 
 1. Testa att posta en _"todo"_ till [`https://fend-api.herokuapp.com/notes`](https://fend-api.herokuapp.com/notes) med hjälp av `fetch`. Värdet du skickar in ska skickas in i din request ska plockas från ett input-fält. Använd tidigare kod. Värdena som du skickar med hämtas via `state`. Statet sätts via dina event-funktioner (`onChange` t.ex.).
