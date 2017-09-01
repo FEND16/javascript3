@@ -57,3 +57,143 @@ componentDidMount(){
     this.input.focus();
 }
 ```
+
+
+## Lösningsförslag
+
+### Sökfunktionalitet, filtrera på genre & sökfält
+
+```jsx
+//App.js
+import React, { Component } from "react";
+import InputField from "./components/InputField";
+import SelectField from './components/SelectField';
+import List from "./components/List";
+
+class App extends Component {
+  /* State will hold all movies fetched, genre to filter by for the
+   * select input and a filtered list of movies */
+  state = {
+    allMovies: [],
+    moviesByGenre: [],
+    genre: '',
+    searchTerm: ''
+  };
+
+  componentDidMount() {
+     fetch(`https://fend-api.herokuapp.com/movies?_limit=20`)
+       .then(response => response.json())
+       .then(json => {
+         this.setState({ allMovies: json });
+       });
+    }
+
+  filterByGenre = (e) => {
+    /* Function bound to the select-field. e.target.value is based on 
+     * <option value=""/>. e.target.value === genre to filter by */
+    const moviesByGenre = this.state.allMovies.filter(movie => {
+      /* movie.genres is an array so we have to use includes for example
+       * if the array contains our value, return the whole object. moviesByGenre
+       * will contain all movies where this statement is true */
+      return movie.genres.includes(e.target.value)
+    })
+    /* Set both the new filtered list and the genre to filter by */
+    this.setState({ moviesByGenre: moviesByGenre, genre: e.target.value });
+  }
+
+  /* Generic onChange-handler, updates all text inputs state */
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  render() {
+    /* Destructure, pick all values from this state for easier referencing */
+    const { genre, moviesByGenre, allMovies, searchTerm } = this.state;
+    /* If genre is selected, return the filtered array, else, return all movies
+     * This value will get past to the List-component that renders the movies */
+    let moviesToRender = genre ? moviesByGenre : allMovies;
+    /* If there is some input in the text input, filter again, else, just return
+     * the list unfiltered, empty string always false */
+    moviesToRender = searchTerm ? moviesToRender.filter(movie => movie.title.includes(searchTerm)) : moviesToRender;
+    return (
+      <div className="App">
+        {
+          /* InputField extracted to a separate component, App still holds
+           * its state, the onChange is in App but gets passed down */
+        }
+        <InputField
+          name="searchTerm"
+          value={searchTerm}
+          onChange={this.onChange}
+        />
+        {
+          /* Pass down the filter function to the select field, also pass
+          * down this.state.genre so the select field updates according to
+          * the state. genre === this.state.genre */ 
+        }
+        <SelectField onChange={this.filterByGenre} value={genre} />
+        {
+          /* moviesToRender will either contain allMovies or moviesByGenre
+           * depending if a genre has been selected  */
+        }
+        <List data={moviesToRender}/>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+```jsx
+//List.js
+import React from "react";
+
+/* List is in charge of just mapping through the array
+ * passed to it */
+function List(props) {
+  const list = props.data.map((item, index) => <p key={index}>{item.title} </p>)
+  return <section>{list}</section>;
+}
+export default List;
+```
+
+```jsx 
+//SelectField.js
+import React from "react";
+
+/* Stateless component, only state in App.js. the event handling
+ * is just passed down but is being performed in App.js, same as
+ * the selected value */
+function SelectField(props) {
+  return (
+    <select onChange={props.onChange} value={props.value}>
+      <option value=""> All </option>
+      <option value="Drama"> Drama </option>
+      <option value="Action"> Action </option>
+      <option value="Crime"> Crime </option>
+      <option value="Adventure"> Adventure </option>
+    </select>
+  );
+}
+export default SelectField;
+```
+
+```jsx
+//InputField.js
+import React from "react";
+
+/* The input has no state, state is handled in App.js
+ * controlled component, but the control is in App.js */
+function InputField(props) {
+  return (
+    <input
+      type="text"
+      name={props.name}
+      onChange={props.onChange}
+      value={props.value}
+    />
+  );
+}
+export default InputField;
+```
