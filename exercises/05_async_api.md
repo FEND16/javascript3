@@ -120,3 +120,129 @@ getDataFromApi().then(data => console.log(data));
 __Bra video att kolla gällande detta__:
 
 * [**Fun Fun Function - async/await**](https://www.youtube.com/watch?v=568g8hxJJp4)
+
+
+## Lösningsförslag
+
+### Todoapplikation via API 
+
+
+```jsx
+import React, { Component } from "react";
+
+/**
+ * Everthing is in the same component for better overview. I would 
+ * recommend splitting it into smaller components! Bootstrap classes used.
+ * Just add bootstrap CDN link in 'public/index.html'
+ */
+
+class App extends Component {
+  /* state holds all todos from API and the input value */
+  state = {
+    allTodos: [],
+    todoValue: ""
+  };
+
+  /* On page load, load all the todos */
+  componentDidMount() {
+    this.fetchAllTodos();
+  }
+  fetchAllTodos = () => {
+    fetch(`http://fend-api.herokuapp.com/notes`)
+      .then(res => res.json())
+      .then(json => {
+        this.setState({ allTodos: json });
+      });
+  };
+
+  /* Send the ID of the todo to be removed as an argument. Then pass it 
+   * Along to fetch, just add the ID at the end of the url. Method: DELETE
+   * to remove, headers must be added. */
+  deleteTodo = (id) => {
+    fetch(`https://fend-api.herokuapp.com/notes/${id}`, {
+      method: "DELETE",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      }
+    }).then(() => {
+      /* On success, filter allTodos using the ID-argument from before. And
+       * then set the state again with a new array without the todo */
+      const newTodoList = this.state.allTodos.filter(todo => todo.id !== id);
+      this.setState({ allTodos: newTodoList });
+    });
+  };
+
+  addTodo = (e) => {
+    /* onSubmit, prevent from submitting form */
+    e.preventDefault();
+    /* Create new todo based on value from state, default completed is false */
+    const todo = {
+      text: this.state.todoValue,
+      completed: false
+    };
+    /* Make a post request to the same URL, but with method: POST
+     * here we supply a body: a stringified version of our todo variable above */
+    fetch("https://fend-api.herokuapp.com/notes", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(todo)
+    })
+      .then(res => res.json())
+      .then(addedTodo => {
+        /* On success, the API returns the created todo, it contains
+         * id, text and completet. So we just have to set the state again
+         * add the new todo to the current state, create a new array, and then
+         * use setState() again */
+        const newTodoList = [...this.state.allTodos, addedTodo];
+        this.setState({ allTodos: newTodoList });
+      });
+  };
+
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    /* Create array of todos, the text, and a button that deletes the todo */
+    const todoList = this.state.allTodos.map(todo => {
+      return (
+        <li className="list-group-item justify-content-between" key={todo.id}>
+          <span> {todo.text} </span>
+          { /* Use the id of the todo as argument, pass it to deleteTodo */}
+          <button
+            className="btn btn-outline-danger"
+            onClick={() => this.deleteTodo(todo.id)}
+          > x </button>
+        </li>
+      );
+    });
+    /* Below is mostly bootstrap stuff, a form with a controlled input field 
+     * and the list we created above */
+    return (
+      <div className="App">
+        <main className="container" style={ {maxWidth: "400px", marginTop: 60}}>
+          <section className="row justify-content-center align-items-center">
+          <form onSubmit={this.addTodo} className="form-inline">
+              <input
+                type="text"
+                name="todoValue"
+                className="form-control"
+                value={this.state.todoValue}
+                onChange={this.onChange}
+              />
+            <input type="submit" value="Add Todo" className="btn btn-primary m-3"/>
+          </form>
+          </section>
+          <ul className="list-group">
+            {todoList}
+          </ul>
+        </main>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
