@@ -193,7 +193,7 @@
 * [PropTypes @ _React Docs_](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 * [Context @ _React Docs_](https://facebook.github.io/react/docs/context.html)
 
-#### Pass 9 - TBD (Flyttad)
+#### Pass 9 - 13/9
 
 * Firebase
     *  Intro   
@@ -206,7 +206,7 @@
 * [Data structure @ _Firebase_](https://firebase.google.com/docs/database/web/structure-data)
 * [Read and Write Data @ _Firebase_](https://firebase.google.com/docs/database/web/read-and-write)
 
-#### Pass 10 - 13/9
+#### Pass 10 - 14/9
 
 * Firebase
     * Event listeners
@@ -216,52 +216,56 @@
 
 * [Read & Write @ _Firebase_](https://firebase.google.com/docs/database/web/read-and-write)
 
-#### Pass 11 - 14/9
-
-* Firebase
-    * Firebase i kombination med react
-    * Hantera dynamisk uppdatering i realtid
-
-#### Pass 12 - 15/9
+#### Pass 11 - 15/9
 
 * Firebase Autentisering
     * Autentisering med email/password
     * `onAuthStateChanged()`
     * Hantering av användare
 
+#### Pass 12 - 18/9
+
+* Firebase
+    * Fortsättning firebase  
+    * Mer om listeners 
+    * Firebase i kombination med react
+    * Hantera dynamisk uppdatering i realtid
+
 ###### Länkar
 
 * [Auth @ _Firebase_](https://firebase.google.com/docs/auth/)
 
-#### Pass 13 - 18/9
+#### Pass 13 - 19/9
 
 * Firebase Autentisering forts.
     * Sociala konton, github etc.
     * Autentiseringsregler i databasen
+    * Adminhantering
+    * 
 
 ###### Länkar
 
 * [Auth @ _Firebase_](https://firebase.google.com/docs/auth/)
 * [Security Rules @ _Firebase_](https://firebase.google.com/docs/database/security/)
 
-#### Pass 14 - 19/9
+#### Pass 14 - 21/9
 
 * `webpack` the return 
     * Production vs development 
 * Deployment
-* `process.env` etc.
+* `process.env`
 
 ###### Länkar
 
 * [Webpack v3](https://webpack.js.org/)
 * [Deployment @ _create-react-app_](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment)
 
-#### Pass 15 -  21/9
+#### Pass 15 -  22/9
 
 * En titt på `redux` för de intresserade
 * Eget arbete med slutuppgiften
 
-#### Pass 16 - 22/9
+#### Pass 16 - 26/9
 
 * Eget arbete med slutuppgiften
 
