@@ -145,6 +145,13 @@
 * _Inputhantering i React_
 * _Refs_
 
+###### Lektionsmaterial
+
+* [__Genomgång__ - Forms i React](slides/05_forms.pdf)
+* [__Övningar__ - 06_forms_and_ref](exercises/05_forms_and_ref.md)
+* [__Kodexempel__ - `LoginForm.js`](code/05_LoginForm.js)
+* [__Kodexempel__ - `LoginForm_send_state.js`](code/05_loginForm_send_state.js)
+
 ###### Länkar
 
 * [Forms @ _React Docs_](https://facebook.github.io/react/docs/forms.html)
@@ -155,6 +162,12 @@
 
 * _Component Composition_
 * _Higher Order Components_
+
+###### Lektionsmaterial
+
+* [__Genomgång__ - Composition](slides/06_composition.pdf)
+* [__Övningar__ - 07_composition](exercises/07_composition.md)
+* [__Kodexempel__ - `composition.js`](code/06_composition.js)
 
 ###### Länkar
 
@@ -168,12 +181,19 @@
 * _Context_
     * Exempel på när context kan användas 
 
+###### Lektionsmaterial
+
+* [__Genomgång__ - Handling Props](slides/07_handling_props.pdf)
+* [__Övningar__ - 08_propTypes_and_context](exercises/08_propTypes_and_context.md)
+* [__Kodexempel__ - `context.js`](code/08_context.js)
+* [__Kodexempel__ - `proptypes.js`](code/06_proptypes.js)
+
 ###### Länkar
 
 * [PropTypes @ _React Docs_](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 * [Context @ _React Docs_](https://facebook.github.io/react/docs/context.html)
 
-#### Pass 9 - 8/9
+#### Pass 9 - TBD (Flyttad)
 
 * Firebase
     *  Intro   
