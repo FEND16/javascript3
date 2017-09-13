@@ -112,16 +112,13 @@ firebase.database().ref(`/todos/-KtFrwFN5vgH_U2wtmpL`).remove();
 
 ## Övningar
  
-1. **TODO-APPLIKATION** fast med `firebase`, du kan återanvända mycket av din kod sedan tidigare. Det som ska ändras är själva APIt vi kallar på.
- * Du ska ha en knapp med en `onClick` som skickar in ett värde till firebase. `onClick`-funktionen ska kalla på `firebase.database().ref('todos')push()` för att lägga till ett nytt objekt i databasen. Värdet som ska läggas till hämtar du från `state`. Du måste alltså också ha något sorts `input`-fält.
- * Du ska sedan hämta ut dessa värden som du pushar in med `firebase.database().ref('todos').on('value')`. Funktionen har en callback, det värde du får tillbaka från dessa callbacks ska du lagra i `state`. Sedan ska du rendera ut detta `state` så att du får ut dina todos i ditt gränssnitt. Se exempel ovan för syntax. Du kan för det mesta återanvända kod från tidigare övningar. Det är bara hur värdet hämtas som är annorlunda.
- * Till varje _todo_ ska det finnas en `onClick` som tar bort en todo från databasen. Du ska alltså kalla på `firebase.database().ref().remove()` i din `onClick`. För att ta bort ett objekt behöver du dess `key`, se exempel ovan.
- * Till varje _todo_ ska det också finnas en `onClick` som ändrar om värdet är `completed`. Här måste vi alltså använda `firebase.database().ref().set();`. Vi behöver `key` samt de ursprungliga värdena.
- * Vad blir det för skillnad genom att använda `on` och `once`. När kan det ena vara bra över det andra? 
- * Skapa en funktion som ändrar `completed` till `true` eller `false`. Vilken funktion i firebase API ska du använda då? Få detta att även reflekteras i ditt UI.
-
-2. Skapa flera "kollektioner" i din databas. Så fort du vill skapa en samling av något så är det bara att använda en ny `ref()`. `.ref("users")`, `ref("comments")`
-
+* **TODO-APPLIKATION** fast med `firebase`, du kan återanvända mycket av din kod sedan tidigare. Det som ska ändras är själva APIt vi kallar på.
+    * Du ska ha en knapp med en `onClick` som skickar in ett värde till firebase. `onClick`-funktionen ska kalla på `firebase.database().ref('todos')push()` för att lägga till ett nytt objekt i databasen. Värdet som ska läggas till hämtar du från `state`. Du måste alltså också ha något sorts `input`-fält.
+    * Du ska sedan hämta ut dessa värden som du pushar in med `firebase.database().ref('todos').on('value')`. Funktionen har en callback, det värde du får tillbaka från dessa callbacks ska du lagra i `state`. Sedan ska du rendera ut detta `state` så att du får ut dina todos i ditt gränssnitt. Se exempel ovan för syntax. Du kan för det mesta återanvända kod från tidigare övningar. Det är bara hur värdet hämtas som är annorlunda.
+    * Till varje _todo_ ska det finnas en `onClick` som tar bort en todo från databasen. Du ska alltså kalla på `firebase.database().ref().remove()` i din `onClick`. För att ta bort ett objekt behöver du dess `key`, se exempel ovan.
+    * Till varje _todo_ ska det också finnas en `onClick` som ändrar om värdet är `completed`. Här måste vi alltså använda `firebase.database().ref().set();`. Vi behöver `key` samt de ursprungliga värdena.
+    * Vad blir det för skillnad genom att använda `on` och `once`. När kan det ena vara bra över det andra? 
+    * Skapa en funktion som ändrar `completed` till `true` eller `false`. Vilken funktion i firebase API ska du använda då? Få detta att även reflekteras i ditt UI.
 
 
 # Lösningsförslag
