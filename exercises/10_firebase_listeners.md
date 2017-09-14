@@ -263,7 +263,7 @@ firebase.database.ref("employees")
 ```js
 firebase.database().ref("employees")
     .orderByChild("amountOnBank")
-    .startAt(30)
+    .endAt(300)
 ```
 
 ```js
