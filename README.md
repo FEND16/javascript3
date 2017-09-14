@@ -238,10 +238,8 @@
 #### Pass 13 - 19/9
 
 * Firebase Autentisering forts.
-    * Sociala konton, github etc.
     * Autentiseringsregler i databasen
     * Adminhantering
-    * 
 
 ###### Länkar
 
