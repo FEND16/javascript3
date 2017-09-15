@@ -200,6 +200,12 @@
     *  Strukturera databasen
     *  Läsa och skriva från databasen
 
+###### Lektionsmaterial
+
+* [__Genomgång__ - Firebase](slides/08_firebase.pdf)
+* [__Övningar__ - firebase_read_write](exercises/09_firebase_read_write.md)
+* [__Kodexempel__ - `09_firebase.js`](code/09_firebase.js)
+
 ###### Länkar
 
 * [Get Started @ _Firebase_](https://firebase.google.com/docs/database/web/start)
@@ -212,9 +218,19 @@
     * Event listeners
     * child_changed, child_added, child_removed 
 
+###### Lektionsmaterial
+
+* [__Genomgång__ - Firebase listeners](slides/09_firebase2.pdf)
+* [__Övningar__ - firebase_listeners](exercises/10_firebase_listeners.md)
+* [__Kodexempel__ - `10_firebase2.js`](code/10_firebase2.js)
+
+
 ###### Länkar
 
 * [Read & Write @ _Firebase_](https://firebase.google.com/docs/database/web/read-and-write)
+* [Working With List of Data @ _Firebase_](https://firebase.google.com/docs/database/web/lists-of-data)
+* [Ben Schwarz - Beyond The Bubble](https://speakerdeck.com/benschwarz/beyond-the-bubble-1)
+
 
 #### Pass 11 - 15/9
 
@@ -223,17 +239,24 @@
     * `onAuthStateChanged()`
     * Hantering av användare
 
-#### Pass 12 - 18/9
+###### Lektionsmaterial
 
-* Firebase
-    * Fortsättning firebase  
-    * Mer om listeners 
-    * Firebase i kombination med react
-    * Hantera dynamisk uppdatering i realtid
+* [__Genomgång__ - Firebase listeners](slides/09_firebase2.pdf)
+* [__Övningar__ - firebase_listeners](exercises/10_firebase_listeners.md)
+* [__Kodexempel__ - `10_firebase2.js`](code/10_firebase2.js)
 
 ###### Länkar
 
+* [**Manage Users @ Firebase**](https://firebase.google.com/docs/auth/web/manage-users)
 * [Auth @ _Firebase_](https://firebase.google.com/docs/auth/)
+* [**FAKER.JS** - Genererar fejkdata](https://github.com/marak/Faker.js/)
+
+#### Pass 12 - 18/9
+
+* `firebase`
+    * Fortsättning firebase  
+    * Mer om listeners 
+    * Firebase i kombination med react
 
 #### Pass 13 - 19/9
 
