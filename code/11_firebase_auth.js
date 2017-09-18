@@ -26,7 +26,7 @@ class App extends Component {
     e.preventDefault();
     firebase.auth()
       .createUserWithEmailAndPassword(this.state.username, this.state.password)
-      .then(user => console.log("Created user", user))
+      .then(user => console.log("Created user"))
       .catch(error => console.log(error))
   };
 
