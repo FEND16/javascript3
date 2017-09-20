@@ -148,7 +148,7 @@
 ###### Lektionsmaterial
 
 * [__Genomgång__ - Forms i React](slides/05_forms.pdf)
-* [__Övningar__ - 06_forms_and_ref](exercises/05_forms_and_ref.md)
+* [__Övningar__ - 06_forms_and_ref](exercises/06_forms_and_ref.md)
 * [__Kodexempel__ - `LoginForm.js`](code/05_LoginForm.js)
 * [__Kodexempel__ - `LoginForm_send_state.js`](code/05_loginForm_send_state.js)
 
@@ -254,15 +254,24 @@
 #### Pass 12 - 18/9
 
 * `firebase`
-    * Fortsättning firebase  
-    * Mer om listeners 
-    * Firebase i kombination med react
+    * Databasstruktur 
+
+###### Lektionsmaterial
+
+* [__Övning__ - Databasstruktur](exercises/12_firebase_structure.md)
+
+##### Länkar
+
+* [**Firebase - Structure Your Database**](https://firebase.google.com/docs/database/web/structure-data)
 
 #### Pass 13 - 19/9
 
-* Firebase Autentisering forts.
+* Firebase Autentisering
     * Autentiseringsregler i databasen
-    * Adminhantering
+
+###### Lektionsmaterial
+
+* [__Genomgång__ - Firebase Rules](slides/11_firebase_rules.pdf)
 
 ###### Länkar
 
