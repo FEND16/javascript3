@@ -83,9 +83,11 @@ npm run deploy
 
 ### NOW
 
+Först måste du installera `now` globalt
+
 _installera `now` **globalt**_
 ```bash
-npm i -g now
+npm install -g now
 ```
 
 _kör byggkommandot i rooten på ditt projekt_
@@ -102,6 +104,13 @@ _kör `now`-kommandot_
 ```bash
 now
 ```
+
+_ge din deployment ett unikt namn genom att ge den ett alias, först originalURL, sedan vad den nya URLen ska heta_
+```js
+now alias https://cat-deploy-nrsljkyfgt.now.sh/ cat-deploy
+```
+
+**Varje gång du ska göra en ändring så måste du lägga upp en ny version/ny länk till ditt projekt och köra `alias` till det nya projektet.**
 
 
 
