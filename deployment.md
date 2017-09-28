@@ -112,6 +112,10 @@ now alias https://cat-deploy-nrsljkyfgt.now.sh/ cat-deploy
 
 **Varje gång du ska göra en ändring så måste du lägga upp en ny version/ny länk till ditt projekt och köra `alias` till det nya projektet.**
 
+## Authorized Domains
 
+Du måste även lägga till den URL:en du lägger upp din app på i **Authorized Domains** i `firebase`:
+
+![Auth Domains](https://i.imgur.com/K6zlGtV.png)
 
 
